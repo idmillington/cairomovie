@@ -1,4 +1,4 @@
-# CSS Colors
+# Cairo Movie
 
-A small package that holds CSS color names and a CSS3 compatible parser
-for color values.
+A wrapper package that performs the bookkeeping needed to render animations
+with Cairo, using the MoviePy library.
