@@ -60,6 +60,8 @@ def render_animation(anim, filename, config, verbose=True):
 
     duration = anim.duration(config)
     fps = config.fps
+    frames = math.ceil(duration * fps) + 1
+    duration = frames / fps
 
     clip = mpy.VideoClip(render_frame, duration=duration)
 
@@ -122,6 +124,6 @@ def render_from_args(anim, args):
     config = AnimConfig(args.width, args.height, args.fps)
     if not args.quiet:
         duration = anim.duration(config)
-        frames = math.ceil(duration * config.fps)
+        frames = math.ceil(duration * config.fps) + 1
         print("Full animation: {:.2f} s, {:d} frames".format(duration, frames))
     render(anim, args.out, config, t=args.time, verbose=not args.quiet)
