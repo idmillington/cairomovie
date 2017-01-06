@@ -110,7 +110,7 @@ def add_anim_arguments(
         '-y', '--height', type=int, default=default_height, action='store',
         help="the image height")
     parser.add_argument(
-        '-f', '--fps', type=int, default=default_fps, action='store',
+        '-f', '--fps', type=float, default=default_fps, action='store',
         help="the fps (ignoree with png filename)")
     parser.add_argument(
         '-t', '--time', type=float, default=None, action='store',
