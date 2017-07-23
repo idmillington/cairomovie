@@ -11,7 +11,7 @@ setup(
         ],
 
     version=version,
-    description='CSS colors and parsing.',
+    description='Creating a movie with cairo frames.',
     author='Ian Millington',
     author_email='idmillington@googlemail.com',
 
